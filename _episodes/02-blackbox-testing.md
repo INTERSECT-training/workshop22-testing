@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Black-box Testing"
 teaching: 0
 exercises: 0
 questions:
@@ -9,7 +9,10 @@ objectives:
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
-FIXME
+*Using legacy code example
+*Adversarial test
+*Fixtures
+
 
 {% include links.md %}
 
