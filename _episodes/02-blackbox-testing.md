@@ -13,6 +13,8 @@ keypoints:
 *Adversarial test
 *Fixtures
 
+Markup :  # Black-box testing #
+
 
 {% include links.md %}
 
