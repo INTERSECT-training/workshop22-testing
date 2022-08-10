@@ -114,6 +114,33 @@ Mesh
 
 **When to rely on scaffolding**
 
-In an ideal situation we should have had stand-aloneunit tests for regridding, fine-coarse resolution and 
+In an ideal situation we should have had stand-alone unit tests for regridding, fine-coarse resolution and hydrodynamics. Two reasons for doing it this way.
+- This is a legacy code with more integrated tests available
+- For several of these, mocked up dependencies are harder to build than using this approach
+
+**The main takeaway is that you should build tests to maximize your code functionality coverage in any mode that you can**
+
+
+## Advanced Mocking for Legacy Codes
+
+A difficult challenge withe legacy codes is isolating a section of code for testing. Most likely the whole code is going to be a candidate for black box testing. However, sometimes it is possible to discern some possbility of componentization where mocking and stubbing ideas can help isolate a code section for testing. Consider a situation that you are working with a legacy code where different solvers are called one after another. In principle, it should be possible to test each solver independently, but you have no way of knowing what the input going into that solver should look like. One possible mocking approach is described below:
+
+> ## mockup for legacy component testing
+> 
+> ~~~
+>Write a utility that can dump the state of the data at desired points in the code
+>Write a reader for reading from the dump and populating the state
+>Write a utility that can compare dumps
+>Write a driver that can use the reader you wrote, call the solver you wish to test and invoke the comparison utility
+>Insert a call to the utility just before, and just after invoking the solver you wish to test
+>Run the whole code as you normally would, the first dump becomes the input for the test, and the second dump becomes the baseline for comparing
+>The driver is your test for the solver
+> ~~~
+
+**Insert a challenge and a solution for an example of the above method**
+
+
+Now let us extend that idea a bit further. You have a solver that invokes on another solver to generate some of the input
+
 
 
