@@ -17,7 +17,7 @@ Here you use the specifiction of the fucntion to derive the inputs and the expec
 Example: with legacy code. Show how the inputs and outputs and how the pytest is written 
 
 There is potentially infinite number of inputs that you can test with. How can we limit the number of tests in an effective manner. There are two appooaches used for this. 
-- Eauivalance class partitioning
+- Equivalance class partitioning
 - Boundary value testing
 
 ## Equivalance class partitioning
@@ -27,6 +27,9 @@ How to create the partitions:
 1. First-level partitioning: Valid vs. Invalid inputs.
 TODO: add image
 2.  Partition valid and invalid inputs into equivalence classes. When creating these internal partions you can either take an *interfce-based approach* or a *functionality-based approach*.
+  * Interface-based apporach
+  
+  * Functionality-based approach
 TODO: add image
 3. Create a test case for at least one value from each equivalence class
 TODO: add image
