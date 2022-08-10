@@ -17,6 +17,10 @@ Can you test code that you don’t have access to? Yes, that is where black-box 
 
 Example: with legacy code. Show how the inputs and outputs and how the pytest is written 
 
+There is potentially infinite number of inputs that you can test with. How can we limit the number of tests in an effective manner. There are two appooaches used for this. 
+- Eauivalance class partitioning
+- Boundary value testing
+
 ## Equivalance class partitioning
 How do you find good test inputs and cover the input space? Partition the input space into non-overlapping 
 Add to the previous example
