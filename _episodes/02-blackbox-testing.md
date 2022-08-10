@@ -27,9 +27,8 @@ How to create the partitions:
 1. First-level partitioning: Valid vs. Invalid inputs.
 TODO: add image
 2.  Partition valid and invalid inputs into equivalence classes. When creating these internal partions you can either take an *interfce-based approach* or a *functionality-based approach*.
-  * Interface-based apporach
-  
-  * Functionality-based approach
+  * Interface-based apporach: Here partitions are created based on the charachteristics of the input parameters of the function that you are testing. You can consider each input parameter in isolation and create the partiions for each parameter. 
+  * Functionality-based approach: Here partitions are created based on the behavioral view of the fucntion that you are testing. Here the partitioning is based on the requirements.
 TODO: add image
 3. Create a test case for at least one value from each equivalence class
 TODO: add image
