@@ -31,11 +31,11 @@ guidelines and practical tools for doing so.
 
 Once you're testing the right way, you will:
 
-> [-] *Know* your code handles doesn't break for certain inputs or operating cases (as
+> - [ ] *Know* your code handles doesn't break for certain inputs or operating cases (as
 > opposed to relying on wishful thinking)
 >
-> [-] Have confidence that the correct gives scientifically correct output
+> - [ ] Have confidence that the correct gives scientifically correct output
 >
-> [-] *Save time!*
+> - [ ] *Save time!*
 {: .checklist}
 
