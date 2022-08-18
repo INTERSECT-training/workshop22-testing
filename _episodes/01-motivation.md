@@ -39,3 +39,43 @@ Once you're testing the right way, you will:
 > - [ ] *Save time!*
 {: .checklist}
 
+
+## Anatomy of a test
+
+## Testa are *code*
+
+## Tests are *documentation*
+
+Fundamentally, tests *reveal* whether code behaves the way it's
+expected to. But they also *document* what those expected behaviors
+are in the first place.  Some of those behaviors may be simple sanity
+checks on obvious aspects of the user interface or to compare
+numerical results against some ground truth fiducial example. But
+there are other less obvious behaviors that tests document especially
+well.
+
+For instance, the developers may have decided how the program should
+behave in an unusual corner or edge case for which other choices may
+also have worked. A test for the expected output in those cases
+documents that expected behavior. It becomes, in essence, a
+self-validating specification.  And because tests are code, they are
+less prone than is "regular" documentation to fall out of sync with
+the overall code because, the moment they do, they *fail* and set off
+alarms.  Traditional documentation, by contrast, is not code, it
+doesn't get verified automatically by *running*, and it doesn't make
+any noise when it no longer matches the code it's supposed to
+describe.
+
+Tests also document bugs.  As we discuss later, any time you uncover a
+bug, it's good practice to immediately document that failure in the
+form of a test that fails and then fix the bug so that the test
+passes. In addition to serving as a mini-history of uncovered problems
+that lives alongside the code, these bug-discovery tests help to
+ensure the same bug doesn't creep back in later.
+
+
+## Tests are *not* a panacea
+
+## Testing should be easy
+
+DISCUSS FRAMEWORK(S) HERE, AUTOMATION.  INTRODUCE BASICS OF PYTEST.
